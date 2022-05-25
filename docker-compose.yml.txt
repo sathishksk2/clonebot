@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  app:
+    build: .
+    command: bash start.sh
+    restart: on-failure
+    environment: 
+      BOT_TOKEN: $BOT_TOKEN
+      GDRIVE_FOLDER_ID: $GDRIVE_FOLDER_ID
+      OWNER_ID: $OWNER_ID
+      IS_TEAM_DRIVE: $IS_TEAM_DRIVE
+      INDEX_URL: $INDEX_URL
