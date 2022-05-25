@@ -10,4 +10,4 @@ services:
       API_HASH: $API_HASH
       TG_BOT_TOKEN: $TG_BOT_TOKEN
       TG_USER_SESSION: $TG_USER_SESSION
-      ENV: $
+      ENV: $ENV
