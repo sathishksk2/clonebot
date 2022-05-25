@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+  app:
+    build: .
+    command: bash start.sh
+    restart: on-failure
+    environment: 
+      APP_ID: $APP_ID
+      API_HASH: $API_HASH
+      TG_BOT_TOKEN: $TG_BOT_TOKEN
+      TG_USER_SESSION: $TG_USER_SESSION
